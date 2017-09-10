@@ -1,0 +1,56 @@
+
+
+html {
+  font-size: 10px;
+  color: $fontColor_second;
+  font-family: $fontColor_second;
+}
+header{
+  padding-top: 4rem;
+
+}
+.primetext{
+  color: $prime;
+}
+
+.h1, .h2, .h3, .h4, .h6{
+  font-family: $fontBase;
+}
+.h1 {
+  font-size: 3.8rem;
+  font-weight: 500;
+  line-height: 6.8rem;
+
+}
+
+.h2 {
+  font-size: 3rem;
+  color: #343434;
+}
+
+.h3 {
+  font-size: 2.4rem;
+  color: $third;
+}
+
+.h4 {
+  font-size: 2.2rem;
+}
+
+.h5 {
+  font-size: 2rem;
+  font-family: $fontColor_second;
+}
+
+.h6 {
+  font-size: 1.8rem;
+  color: $third;
+}
+
+p{
+  font-family: $fontBase;
+  font-size: 2rem;
+  text-align: justify;
+}
+
+

@@ -12,22 +12,22 @@ div, p, section, footer, header, aside {
 .section{
   padding-top: 5rem;
   padding-bottom: 5rem;
-  @media screen and (max-width: 70rem) {
+  @media screen and (max-width: $small-screen-up) {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
-//.wrap {
-//  max-width: $mainContainer;
-//  padding-left: $containerHorIndent;
-//  padding-right: $containerHorIndent;
-//  margin: 0 auto;
-//
-//  @media (max-width: 120rem){
-//    padding-left: $containerHorIndentMobile;
-//    padding-right: $conta//inerHorIndentMobile;
-//  }
-//}
+.wrap {
+  max-width: $mainContainer;
+  padding-left: $containerHorIndent;
+  padding-right: $containerHorIndent;
+  margin: 0 auto;
+
+  @media (max-width: $small-screen-up){
+    padding-left: $containerHorIndentMobile;
+    padding-right: $containerHorIndentMobile;
+  }
+}
 
 
 

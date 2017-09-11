@@ -11,93 +11,88 @@
   width: 100%;
   display: table;
   z-index: 1;
-    &:before {
-      content: ' ';
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      opacity: 0.85;
-      background: url("../img/bg/bg.jpg") no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      background-size: cover;
+  &:before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.85;
+    background: url("../img/bg/bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
 
-      .navig{
+    .hamburger{
+      display: none;
+      cursor: pointer;
+      @media screen and (max-width: $small-screen-up) {
+        padding-top:1.1rem;
+        display: block !important;
+      }
+      a{
+        color: $second;
+      }
+
+    }
+    .hero-nav{
+      display: block;
+      ul{
         display: inline-block;
-        .menu-trigger {
-          display: none;
-          color: $second;
-          @media screen and (max-width: $small-screen-up) {
-            display: block !important;
-            font-size: 4rem;
+        .hero-nav-item{
+          display: inline-block;
+          a{
+            font-family: $fontBase;
+            font-size: 1.8rem;
+            line-height: 6.8rem;
+            font-weight: 400;
+            text-decoration: none;
+            color: $second;
+            padding-right: 1.5rem;
+            transition: 0.3s;
+            &:hover {
+              color: $prime;
+            }
           }
         }
       }
-  }
 
+      @media screen and (max-width: $small-screen-up) {
+        ul {
+          display:none;
+          .hero-nav-item{
 
-
-
-
-
-      //.navig {
-      //
-      //  }
-      //  ul{
-      //    display: inline-block;
-      //    @media screen and (max-width: $small-screen-up) {
-      //      display: none;
-      //    }
-      //  }
-      //  li{
-      //    display: inline-block;
-      //    @media screen and (max-width: $small-screen-up) {
-      //      display: block;
-      //    }
-      //  }
-      //  a {
-      //    font-family: $fontBase;
-      //    font-size: 1.8rem;
-      //    line-height: 6.8rem;
-      //    font-weight: 400;
-      //    text-decoration: none;
-      //    color: $second;
-      //    padding-right: 1.5rem;
-      //    transition: 0.3s;
-      //    &:hover {
-      //      color: $third;
-      //    }
-      //    @media screen and (max-width: $small-screen-up) {
-      //      font-size:1rem;
-      //    }
-      //  }
-      //}
-
-
-//header end
-
-//phone and text
-.main-area {
-  padding-top:13rem;
-  @media screen and (max-width: $small-screen-up) {
-    padding-top:6rem;
-    padding:0 1.5rem;
-  }
-  .text-content {
-
-    @media screen and (max-width: $small-screen-up) {
-      display: block;
+            display: block;
+            a{
+              font-size: 1.8rem;
+              line-height: 5rem;
+              padding-right: 0rem;
+            }
+          }
+        }
+      }
     }
-
+//BUTTON AND PHONE
+  .main-area {
+    padding-top: 6rem;
+    @media screen and (max-width: $small-screen-up) {
+      padding-top: 6rem;
+      padding: 0 1.5rem;
+    }
     .main-text {
       padding-top:4rem;
-      button{
+      @media screen and (max-width: $small-screen-up) {
+        margin-top: 1.5rem;
+      }
+      button {
         margin-top: 10rem;
         @media screen and (max-width: $small-screen-up) {
           margin-top: 3rem;
+          margin: 0 auto;
+          text-align: center;
         }
       }
     }
@@ -134,6 +129,9 @@
           border-radius: 0.5rem;
           background-color: rgba(255, 255, 255, 0.25);
           margin-top: 2rem;
+          img{
+            padding-top:50%;
+          }
         }
         .button-home {
           width: 4.6rem;
@@ -147,7 +145,113 @@
       }
     }
   }
+}
+
+//skills
+#it-works{
+  .h2{
+    padding-bottom: 10rem;
+    @media screen and (max-width: $small-screen-up) {
+      padding-bottom: 5rem;
+    }
   }
+}
+.box{
+  padding-bottom: 5rem;
+  @media screen and (max-width: $small-screen-up) {
+    padding-bottom: 3rem;
   }
+  .bgS-food{
+    top:1.5rem;
+    right: -2.5rem;
+  }
+  .bgS-cart{
+    top:1.5rem;
+    right: -2.5rem;
+  }
+  .bgS-setting{
+    top:1.5rem;
+    right: -2.5rem;
+  }
+  .bgS-user{
+    top:1.5rem;
+    right: -2.5rem;
+  }
+  .bgS-edit{
+    top:1.5rem;
+    right: -2.5rem;
+  }
+  .bgS-email{
+    top:1.5rem;
+    right: -2.5rem;
+  }
+
+
+  .bold-text{
+    padding-top: 3rem;
+    color: #343434;
+    font-family: $fontBase;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 6.8rem;
+    font-weight: bold;
+  }
+  p{
+    color: #5c5c5c;
+    font-family: $fontBase;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+  }
+}
+
+//email
+
+.email-bg{
+  background: url("../img/bg/bg-email.jpg") no-repeat center center fixed;
+  background-color: $third;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  height: 56rem;
+  width: 100%;
+
+  .email-block{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    @media screen and (max-width: $small-screen-up) {
+      padding-bottom: 5rem;
+      padding-top: 5rem;
+    }
+    email-text{
+      padding-left: 15rem;
+      padding-right: 15rem;
+
+      @media screen and (max-width: $small-screen-up) {
+        padding-left: 0rem;
+        padding-right: 0rem;
+      }
+    }
+    input[type=email] {
+      padding-left: 2rem;
+      width: 76%;
+      height: 6.5rem;
+      border-radius: 0.5rem;
+      border: 0.2rem solid $second;
+      background: transparent;
+      color: #fffefe;
+      font-family: $fontBase;
+      font-size: 2.5rem;
+      font-weight: 400;
+      line-height: 3.6rem;
+      margin-top:10rem;
+      @media screen and (max-width: $small-screen-up) {
+        width: 60%;
+        font-size: 2rem;
+      }
+    }
+
+  }
+}
 
 

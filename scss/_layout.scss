@@ -17,6 +17,14 @@ div, p, section, footer, header, aside {
     padding-bottom: 2rem;
   }
 }
+.section-footer{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  @media screen and (max-width: $small-screen-up) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
 .wrap {
   max-width: $mainContainer;
   padding-left: $containerHorIndent;
